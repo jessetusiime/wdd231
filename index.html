@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Home Page - Front End Development 1">
+    <meta name="author" content="Tusiime Jesse">
+    <title>WDD 231 - Course Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <svg class="logo" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" fill="#333" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="24"
+                    font-weight="bold">T</text>
+            </svg>
+            <span class="site-name">Tusiime Jesse</span>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="close-icon">X</span>
+        </button>
+    </header>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="final/index.html">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about-section">
+            <h2>About Me</h2>
+            <p>My name is Tusiime Jesse, I am currently pursuing my Bachelor's Degree in Software Development at Brigham
+                Young University Idaho.
+                I am very passionate about technology and software and at the moment I am learning front end development
+                mainly focused on HTML, CSS and Javascript through hands on projects.
+            </p>
+            <p>I am also learning computer programming using languages like Python and C# and I am working towards
+                becoming the best progammer in my area while building software that solves real world problems that
+                focuses on innovation and development.</p>
+        </section>
+
+        <section class="photo-section">
+            <h2>Student Photo</h2>
+            <div class="photo-placeholder">
+                <img src="images/profile.webp" alt="Jesse's profile photo">
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+            </div>
+            <div id="course-list"></div>
+            <p class="credit-total">The total credits for course listed above is <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tusiime-jesse-743363316/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank" aria-label="LinkedIn">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                    <path
+                        d="M29.63 0H2.37A2.37 2.37 0 0 0 0 2.37v27.26A2.37 2.37 0 0 0 2.37 32h27.26A2.37 2.37 0 0 0 32 29.63V2.37A2.37 2.37 0 0 0 29.63 0zM9.5 27.29H4.73V12h4.77v15.29zM7.12 9.92a2.76 2.76 0 1 1 0-5.52 2.76 2.76 0 0 1 0 5.52zm20.17 17.37h-4.77v-7.43c0-1.77-.03-4.05-2.47-4.05-2.47 0-2.85 1.93-2.85 3.92v7.56h-4.77V12h4.58v2.08h.06a5.02 5.02 0 0 1 4.52-2.48c4.83 0 5.72 3.18 5.72 7.32v8.37z" />
+                </svg>
+            </a>
+            <a href="https://github.com/jessetusiime" target="_blank" aria-label="GitHub">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                    <path
+                        d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64a15.353 15.353 0 0 1 4.005-0.539c1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.121 1.646 2.548 1.646 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z" />
+                </svg>
+            </a>
+            <a href="https://x.com/JesseTusii10741?t=u8waSLHlrdrPvH0eu1oomQ&s=08" target="_blank"
+                aria-label="X (Twitter)">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                    <path
+                        d="M18.42 14.009L27.891 3h-2.244l-8.224 9.559L10.855 3H3.28l9.932 14.455L3.28 29h2.244l8.684-10.095L20.944 29h7.575l-10.1-14.991zm-3.074 3.573l-1.006-1.439L6.333 4.69h3.447l6.462 9.243 1.006 1.439 8.4 12.015h-3.447l-6.854-9.804z" />
+                </svg>
+            </a>
+        </div>
+        <p>
+            &copy; <span id="currentyear"></span> | Tusiime Jesse | Kampala, Uganda
+        </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
