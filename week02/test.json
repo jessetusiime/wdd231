@@ -1,0 +1,23 @@
+{
+    "family_name": "Britton",
+    "date_moved": "2023-08-12",
+    "number_of_people": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Toby Britton",
+            "age": 22,
+            "gender": "male"
+        },
+        {
+            "name": "Acacia Britton",
+            "age": 16,
+            "gender": "female"
+        },
+        {
+            "name": "Kevin Britton",
+            "age": 15,
+            "gender": "male"
+        }
+    ]
+}
