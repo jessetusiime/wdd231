@@ -1,0 +1,103 @@
+{
+    "members": [
+        {
+            "id": 1,
+            "name": "Nakumatt Supermarket",
+            "address": "Parliament Avenue, Kampala",
+            "phone": "(256) 414-234-567",
+            "website": "https://nakumatt.ug",
+            "image": "images/nakumatt.jpg",
+            "membershipLevel": 3,
+            "category": "Retail",
+            "description": "Leading supermarket chain providing quality products and services"
+        },
+        {
+            "id": 2,
+            "name": "Uganda Coffee Roasters",
+            "address": "Plot 45 Industrial Area, Kampala",
+            "phone": "(256) 414-345-678",
+            "website": "https://ugandacoffee.com",
+            "image": "images/coffee-roasters.jpg",
+            "membershipLevel": 2,
+            "category": "Manufacturing",
+            "description": "Premium coffee roasting and export company"
+        },
+        {
+            "id": 3,
+            "name": "Kampala Tech Solutions",
+            "address": "Nakasero Road, Kampala",
+            "phone": "(256) 414-456-789",
+            "website": "https://kampalateach.ug",
+            "image": "images/tech-solutions.jpg",
+            "membershipLevel": 3,
+            "category": "Technology",
+            "description": "IT consulting and software development services"
+        },
+        {
+            "id": 4,
+            "name": "Pearl Guest House",
+            "address": "Kololo, Kampala",
+            "phone": "(256) 414-567-890",
+            "website": "https://pearlguesthouse.ug",
+            "image": "images/pearl-guest.jpg",
+            "membershipLevel": 1,
+            "category": "Hospitality",
+            "description": "Comfortable accommodation for business and leisure travelers"
+        },
+        {
+            "id": 5,
+            "name": "East African Bank",
+            "address": "Kampala Road, Kampala",
+            "phone": "(256) 414-678-901",
+            "website": "https://eabank.ug",
+            "image": "images/ea-bank.jpg",
+            "membershipLevel": 3,
+            "category": "Financial Services",
+            "description": "Full-service banking for individuals and businesses"
+        },
+        {
+            "id": 6,
+            "name": "Crane Advertising Agency",
+            "address": "Buganda Road, Kampala",
+            "phone": "(256) 414-789-012",
+            "website": "https://craneads.ug",
+            "image": "images/crane-ads.jpg",
+            "membershipLevel": 2,
+            "category": "Marketing",
+            "description": "Creative advertising and marketing solutions"
+        },
+        {
+            "id": 7,
+            "name": "Victoria Motors",
+            "address": "Jinja Road, Kampala",
+            "phone": "(256) 414-890-123",
+            "website": "https://victoriamotors.ug",
+            "image": "images/victoria-motors.jpg",
+            "membershipLevel": 3,
+            "category": "Automotive",
+            "description": "New and used vehicle sales and service center"
+        },
+        {
+            "id": 8,
+            "name": "Kampala Construction Ltd",
+            "address": "Industrial Area, Kampala",
+            "phone": "(256) 414-901-234",
+            "website": "https://kampalaconstruction.ug",
+            "image": "images/construction.jpg",
+            "membershipLevel": 2,
+            "category": "Construction",
+            "description": "Residential and commercial construction services"
+        },
+        {
+            "id": 9,
+            "name": "Green Valley Farm Supplies",
+            "address": "Entebbe Road, Kampala",
+            "phone": "(256) 414-012-345",
+            "website": "https://greenvalley.ug",
+            "image": "images/farm-supplies.jpg",
+            "membershipLevel": 1,
+            "category": "Agriculture",
+            "description": "Agricultural inputs and farming equipment supplier"
+        }
+    ]
+}
