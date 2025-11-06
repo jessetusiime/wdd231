@@ -1,4 +1,3 @@
-// Get DOM elements
 const directory = document.getElementById('directory');
 const gridViewBtn = document.getElementById('gridView');
 const listViewBtn = document.getElementById('listView');
@@ -18,7 +17,6 @@ async function getMembers() {
     }
 }
 
-// Display members based on current view
 function displayMembers(members) {
     directory.innerHTML = '';
 
@@ -26,7 +24,6 @@ function displayMembers(members) {
         const memberCard = document.createElement('div');
         memberCard.classList.add('member-card');
 
-        // Get membership level badge
         const levelBadge = getMembershipBadge(member.membershipLevel);
 
         memberCard.innerHTML = `
@@ -39,7 +36,7 @@ function displayMembers(members) {
         <p class="category">${member.category}</p>
         <p class="description">${member.description}</p>
         <p class="address">${member.address}</p>
-        <p class="phone"> ${member.phone}</p>
+        <p class="phone">${member.phone}</p>
         <p class="website"><a href="${member.website}" target="_blank">Visit Website</a></p>
       </div>
     `;
@@ -48,7 +45,6 @@ function displayMembers(members) {
     });
 }
 
-// Get membership level badge
 function getMembershipBadge(level) {
     const badges = {
         1: '<span class="badge member">Member</span>',
@@ -58,7 +54,7 @@ function getMembershipBadge(level) {
     return badges[level] || '';
 }
 
-// Toggle between grid and list view
+// Toggle between the grid and list view
 gridViewBtn.addEventListener('click', () => {
     directory.classList.remove('list-view');
     directory.classList.add('grid-view');
@@ -87,14 +83,12 @@ darkModeToggle.addEventListener('click', () => {
     localStorage.setItem('darkMode', isDark);
 });
 
-// Check for saved dark mode preference
+// Check for saved dark mode
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
 }
 
-// Footer information
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
-// Initialize
 getMembers();

@@ -1,7 +1,6 @@
-/* Base Styles - Mobile First (320px+) */
 :root {
-    --primary-color: #2E5C8A;
-    --secondary-color: #D4AF37;
+    --primary-color: #0b3157;
+    --secondary-color: #e7b40d;
     --background-color: #F5F5F5;
     --text-color: #333333;
     --white: #FFFFFF;
@@ -25,16 +24,15 @@ body.dark-mode {
 }
 
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Header Styles */
 header {
-    background-color: var(--white);
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
@@ -46,13 +44,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex: 1;
 }
 
 .logo img {
@@ -62,8 +63,9 @@ header {
 
 .logo h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    color: var(--primary-color);
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: normal;
 }
 
 #darkModeToggle {
@@ -72,22 +74,21 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
-    order: 2;
+    color: var(--white);
 }
 
 #menuButton {
-    background: var(--primary-color);
-    color: var(--white);
+    background: none;
     border: none;
-    font-size: 1.5rem;
+    color: var(--white);
+    font-size: 2rem;
     cursor: pointer;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    order: 3;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
 }
 
-/* Navigation */
 nav {
+    background-color: var(--white);
     width: 100%;
 }
 
@@ -95,7 +96,8 @@ nav ul {
     list-style: none;
     display: none;
     flex-direction: column;
-    background-color: var(--primary-color);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 nav ul.show {
@@ -103,23 +105,27 @@ nav ul.show {
 }
 
 nav ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+nav ul li:last-child {
+    border-bottom: none;
 }
 
 nav ul li a {
     display: block;
     padding: 1rem;
-    color: var(--white);
+    color: var(--text-color);
     text-decoration: none;
+    text-align: center;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--light-gray);
 }
 
-/* Main Content */
 main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -134,7 +140,6 @@ main h2 {
     text-align: center;
 }
 
-/* View Controls */
 .view-controls {
     display: flex;
     justify-content: center;
@@ -166,7 +171,6 @@ main h2 {
     color: var(--white);
 }
 
-/* Directory - Grid View (Default) */
 #directory {
     display: grid;
     gap: 1.5rem;
@@ -180,7 +184,6 @@ main h2 {
     grid-template-columns: 1fr;
 }
 
-/* Member Cards */
 .member-card {
     background-color: var(--white);
     border: 1px solid var(--border-color);
@@ -200,6 +203,7 @@ main h2 {
     width: 100%;
     height: 200px;
     overflow: hidden;
+    background-color: var(--light-gray);
 }
 
 .member-image img {
@@ -273,21 +277,18 @@ main h2 {
     text-decoration: underline;
 }
 
-/* List View Styles */
+/* List View */
 #directory.list-view .member-card {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 }
 
 #directory.list-view .member-image {
-    width: 150px;
+    width: 100%;
     height: 150px;
-    flex-shrink: 0;
 }
 
 #directory.list-view .member-info {
-    flex: 1;
     padding: 1rem;
 }
 
@@ -299,8 +300,8 @@ main h2 {
     display: none;
 }
 
-/* Footer */
 footer {
+    display: grid;
     background-color: var(--primary-color);
     color: var(--white);
     padding: 2rem 1rem 1rem;
@@ -311,6 +312,8 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -322,6 +325,7 @@ footer {
 
 .contact-info p {
     margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .social-media {
@@ -331,20 +335,26 @@ footer {
     align-items: center;
 }
 
-.social-media a img {
-    width: 40px;
-    height: 40px;
+.social-media a {
+    display: inline-block;
     transition: transform 0.3s ease;
 }
 
-.social-media a:hover img {
+.social-media a:hover {
     transform: scale(1.1);
+}
+
+.social-media a svg {
+    width: 40px;
+    height: 40px;
 }
 
 .footer-bottom {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-bottom p {
