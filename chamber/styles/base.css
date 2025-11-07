@@ -1,8 +1,8 @@
 :root {
     --primary-color: #0b3157;
-    --secondary-color: #e7b40d;
+    --secondary-color: #f7be05;
     --background-color: #F5F5F5;
-    --text-color: #333333;
+    --text-color: #000000;
     --white: #FFFFFF;
     --light-gray: #E0E0E0;
     --border-color: #CCCCCC;
@@ -74,7 +74,7 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
-    color: var(--white);
+    color: var(--text-color);
 }
 
 #menuButton {
@@ -224,18 +224,18 @@ main h2 {
 }
 
 .badge.member {
-    background-color: #666;
+    background-color: #282727;
     color: var(--white);
 }
 
 .badge.silver {
     background-color: #C0C0C0;
-    color: #333;
+    color: #121111;
 }
 
 .badge.gold {
     background-color: var(--secondary-color);
-    color: #333;
+    color: #030303;
 }
 
 .member-info {
@@ -250,7 +250,7 @@ main h2 {
 }
 
 .member-info .category {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
