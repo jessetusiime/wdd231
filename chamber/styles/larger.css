@@ -134,3 +134,58 @@
     font-size: 1.75rem;
   }
 }
+
+/* Responsive Design for Tablets and Desktop */
+@media screen and (min-width: 768px) {
+  @media (min-width: 641px) {
+      .hero img {
+        height: 80vh;
+        /* large visual impact */
+      }
+  
+      .cta-btn {
+        font-size: 0.6rem;
+        padding: 1em 2em;
+      }
+    }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .events-grid {
+    padding: 1.5rem;
+  }
+
+  .current-weather {
+    padding: 2rem;
+  }
+
+  #forecastCards {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem;
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding: 3rem;
+  }
+
+  .hero-logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

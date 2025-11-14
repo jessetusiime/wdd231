@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Kampala Chamber of Commerce Business Directory - Connect with local businesses in Kampala City and surrounding areas">
+        content="Kampala Chamber of Commerce - Supporting local businesses and economic growth in Kampala City and surrounding areas">
     <meta name="author" content="Tusiime Jesse">
-    <meta property="og:title" content="Kampala Chamber of Commerce - Business Directory">
+    <meta property="og:title" content="Kampala Chamber of Commerce">
     <meta property="og:description"
-        content="Connect with local businesses in Kampala. Support economic growth and find legitimate business partners.">
+        content="Join Kampala's premier business network. Connect with local businesses and support economic growth.">
     <meta property="og:image" content="https://jessetusiime.github.io/wdd231/chamber/images/commerce.webp">
-    <meta property="og:url" content="https://jessetusiime.github.io/wdd231/chamber/directory.html">
-    <title>Business Directory - Kampala Chamber of Commerce</title>
+    <meta property="og:url" content="https://jessetusiime.github.io/wdd231/chamber/index.html">
+    <title>Kampala Chamber of Commerce - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/home.css">
     <script src="scripts/home.js" defer></script>
 </head>
 
@@ -34,9 +34,9 @@
             </div>
             <nav class="nav-bar">
                 <ul id="navMenu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="events.html">Events</a></li>
                 </ul>
@@ -47,20 +47,97 @@
     </header>
 
     <main>
-        <h2>Business Directory</h2>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-mobile.webp" media="(max-width: 640px)">
+                <img src="images/home-hero.webp" alt="Kampala Chamber of Commerce Keynote Event">
+            </picture>
+        
+            <div class="hero-overlay">
+                <h1>Welcome to the Kampala Chamber</h1>
+                <p>Connecting businesses and driving growth</p>
+                <a href="#" class="cta-btn">Keynote Tickets</a>
+            </div>
+        </section>
 
-        <div class="view-controls">
-            <button id="gridView" class="view-btn active" aria-label="Grid view">
-                <span class="grid-icon">⊞</span> Grid
-            </button>
-            <button id="listView" class="view-btn" aria-label="List view">
-                <span class="list-icon">☰</span> List
-            </button>
-        </div>
 
-        <div id="directory" class="grid-view">
-            <!-- Member cards to be delivered by JavaScript -->
-        </div>
+        <!-- Current Events Section -->
+        <section class="events">
+            <h2>Events</h2>
+            <div class="events-grid">
+                <article class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Business Networking Breakfast</h3>
+                        <p class="event-time">8:00 AM - 10:00 AM</p>
+                        <p class="event-location">Serena Hotel, Kampala</p>
+                        <p>Connect with local business leaders over breakfast and discuss collaboration opportunities.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Digital Marketing Workshop</h3>
+                        <p class="event-time">2:00 PM - 5:00 PM</p>
+                        <p class="event-location">Innovation Hub, Kololo</p>
+                        <p>Learn the latest digital marketing strategies to grow your business online presence.</p>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-date">
+                        <span class="day">30</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Annual Business Awards Gala</h3>
+                        <p class="event-time">6:00 PM - 10:00 PM</p>
+                        <p class="event-location">Kampala Sheraton Hotel</p>
+                        <p>Celebrate excellence in business and entrepreneurship at our prestigious annual gala.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div class="current-weather">
+                <div id="weatherIcon"></div>
+                <div class="weather-details">
+                    <h3 id="currentTemp">Loading...</h3>
+                    <p id="weatherDesc">Fetching weather data...</p>
+                    <p id="weatherHigh">High: --°</p>
+                    <p id="weatherLow">Low: --°</p>
+                    <p id="weatherHumidity">Humidity: --%</p>
+                    <p id="weatherSunrise">Sunrise: --:--am</p>
+                    <p id="weatherSunset">Sunset: --:--pm</p>
+                </div>
+            </div>
+
+            <h2>Weather Forecast</h2>
+            <div id="forecastCards">
+                <div class="forecast-loading">Loading forecast...</div>
+            </div>
+        </section>
+
+        <!-- Company Spotlights Section -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <p class="spotlights-intro">Featuring our Gold and Silver members</p>
+            <div id="spotlightCards" class="spotlight-grid">
+                <!-- Spotlight cards will be loaded dynamically -->
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -72,7 +149,7 @@
                 <p>Email: info@kampalachamber.org</p>
                 <p>Phone: +256 414-123-456</p>
             </div>
-    
+
             <div class="social-media">
                 <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="#FFFFFF">
@@ -93,7 +170,7 @@
                     </svg>
                 </a>
             </div>
-    
+
             <div class="project-info">
                 <p>WDD231 Class Project</p>
                 <p>Tusiime Jesse</p>
