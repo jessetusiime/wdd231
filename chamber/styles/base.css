@@ -369,6 +369,12 @@ main h2 {
     }
 }
 
+.head {
+    text-align: left;
+    color: var(--text-color);
+    font-size: large;
+}
+
 /* Events Section */
 .events {
     margin-top: 1.5rem;
