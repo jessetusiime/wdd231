@@ -1,4 +1,3 @@
-// UI MODULE – menu, dark mode, footer dates
 export function initMenu() {
     const menuButton = document.getElementById('menuButton');
     const navMenu = document.getElementById('navMenu');

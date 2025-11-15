@@ -146,12 +146,11 @@
   }
 }
 
-/* Responsive Design for Tablets and Desktop */
+/* For tablet and desktop view */
 @media screen and (min-width: 768px) {
   @media (min-width: 641px) {
       .hero img {
         height: 80vh;
-        /* large visual impact */
       }
   
       .cta-btn {
