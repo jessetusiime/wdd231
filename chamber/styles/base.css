@@ -302,7 +302,8 @@ main h2 {
 
 .hero {
     position: relative;
-    width: 100%;
+    max-width: 100%;
+    width: 100vw;
     height: 85vh;
     overflow: hidden;
 }
