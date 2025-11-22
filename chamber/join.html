@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apply to join the Kampala Chamber of Commerce, become a member and enjoy the resources, benefits and networking opportunities.">
+    <meta name="author" content="Tusiime Jesse">
+    <meta property="og:title" content="Kampala Chamber of Commerce">
+    <meta property="og:description"
+        content="Submit your application to join Kampala's top business community.">
+    <meta property="og:image" content="https://jessetusiime.github.io/wdd231/chamber/images/commerce.webp">
+    <meta property="og:url" content="https://jessetusiime.github.io/wdd231/chamber/index.html">
+    <title>Kampala Chamber of Commerce - Join</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,200..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+    <script type="module" defer>
+        import { initMenu, initDarkMode, setFooterDates } from "./scripts/ui.mjs";
+
+        initMenu();
+        initDarkMode();
+        setFooterDates();
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Kampala Chamber of Commerce Logo">
+                <h1>Kampala Chamber of Commerce</h1>
+            </div>
+            <nav class="nav-bar">
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
+            <button id="menuButton" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="page-title">Join Our Chamber</h2>
+    
+        <div class="join-container">
+            <div class="membership-form">
+                <form action="thankyou.html" method="get">
+                    <div class="form-group">
+                        <label>
+                            First Name *
+                            <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>
+                            Last Name *
+                            <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>
+                            Organizational Title
+                            <input type="text" name="orgTitle" title="Organizational Title"
+                                autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                                title="Please enter at least 7 characters using only letters, spaces, and hyphens">
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>
+                            Email Address *
+                            <input type="email" name="email" title="Email Address" autocomplete="email"
+                                placeholder="example@business.com" required>
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>
+                            Mobile Phone *
+                            <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required>
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>
+                            Business/Organization Name *
+                            <input type="text" name="businessName" title="Business Name" autocomplete="organization"
+                                required>
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Membership Level *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="membershipLevel" value="np" required>
+                                NP Membership – Non-profit
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="membershipLevel" value="bronze">
+                                Bronze Membership
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="membershipLevel" value="silver">
+                                Silver Membership
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="membershipLevel" value="gold">
+                                Gold Membership
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>
+                            Business/Organization Description
+                            <textarea name="businessDescription" title="Business Description"></textarea>
+                        </label>
+                    </div>
+    
+                    <input type="hidden" id="timestamp" name="timestamp">
+    
+                    <input type="submit" value="Join Now">
+                </form>
+            </div>
+    
+            <div class="membership-cards">
+                <div class="membership-card np">
+                    <h3>NP Membership</h3>
+                    <p>For Non-Profit Organizations</p>
+                    <p><strong>FREE</strong></p>
+                    <button class="learn-more-btn" onclick="openModal('npModal')">Learn More</button>
+                </div>
+    
+                <div class="membership-card bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Essential Benefits</p>
+                    <p><strong>$50</strong></p>
+                    <button class="learn-more-btn" onclick="openModal('bronzeModal')">Learn More</button>
+                </div>
+    
+                <div class="membership-card silver">
+                    <h3>Silver Membership</h3>
+                    <p><strong>$200</strong></p>
+                    <button class="learn-more-btn" onclick="openModal('silverModal')">Learn More</button>
+                </div>
+    
+                <div class="membership-card gold">
+                    <h3>Gold Membership</h3>
+                    <p>Premium Partnership</p>
+                    <p><strong>$500</strong></p>
+                    <button class="learn-more-btn" onclick="openModal('goldModal')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="npModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('npModal')">&times;</span>
+            <h2>NP Membership - Non-Profit</h2>
+            <p><strong>Cost: FREE</strong></p>
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Basic directory listing with organization name and contact</li>
+                <li>Access to monthly networking events</li>
+                <li>Chamber newsletter subscription</li>
+                <li>Community forum access</li>
+                <li>Resource library access</li>
+            </ul>
+            <p>Perfect for non-profit organizations looking to connect with the business community and access valuable
+                resources.</p>
+        </div>
+    </div>
+    
+    <div id="bronzeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+            <h2>Bronze Membership</h2>
+            <p><strong>Affordable Entry Level - $50</strong></p>
+            <h3>All NP Benefits PLUS:</h3>
+            <ul>
+                <li>Enhanced directory listing with logo and description</li>
+                <li>20% discount on event registrations</li>
+                <li>Quarterly business training workshops</li>
+                <li>Member-to-member discounts</li>
+                <li>Social media features (quarterly)</li>
+                <li>Certificate of membership</li>
+            </ul>
+            <p>Ideal for small businesses and startups looking to establish their presence in the chamber community.</p>
+        </div>
+    </div>
+    
+    <div id="silverModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('silverModal')">&times;</span>
+            <h2>Silver Membership</h2>
+            <p><strong>Enhanced Visibility Package - $200</strong></p>
+            <h3>All Bronze Benefits PLUS:</h3>
+            <ul>
+                <li>Premium directory listing with photos and video</li>
+                <li>Featured spotlight ad (monthly)</li>
+                <li>30% discount on all events</li>
+                <li>Priority event registration</li>
+                <li>Monthly social media features</li>
+                <li>Business referral program participation</li>
+                <li>Ribbon cutting ceremony for new locations</li>
+                <li>Free meeting room usage (4 hours/month)</li>
+            </ul>
+            <p>Perfect for growing businesses seeking greater exposure and networking opportunities.</p>
+        </div>
+    </div>
+    
+    <div id="goldModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('goldModal')">&times;</span>
+            <h2>Gold Membership</h2>
+            <p><strong>Premium Partnership Level - $500</strong></p>
+            <h3>All Silver Benefits PLUS:</h3>
+            <ul>
+                <li>Platinum directory listing with unlimited content</li>
+                <li>Featured homepage spotlight (bi-weekly)</li>
+                <li>50% discount on all events and programs</li>
+                <li>Complimentary event sponsorship opportunities</li>
+                <li>Weekly social media features</li>
+                <li>Dedicated account manager</li>
+                <li>Speaking opportunities at chamber events</li>
+                <li>Free meeting room usage (12 hours/month)</li>
+                <li>Annual business feature article</li>
+                <li>Board meeting attendance privileges</li>
+                <li>VIP networking event invitations</li>
+            </ul>
+            <p>The ultimate partnership level for established businesses committed to chamber leadership and maximum
+                visibility.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Kampala Chamber of Commerce</h3>
+                <p>10 Kampala Road</p>
+                <p>Kampala, Uganda</p>
+                <p>Email: info@kampalachamber.org</p>
+                <p>Phone: +256 414-123-456</p>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="#FFFFFF">
+                        <path
+                            d="M29.63 0H2.37A2.37 2.37 0 0 0 0 2.37v27.26A2.37 2.37 0 0 0 2.37 32h27.26A2.37 2.37 0 0 0 32 29.63V2.37A2.37 2.37 0 0 0 29.63 0zM9.5 27.29H4.73V12h4.77v15.29zM7.12 9.92a2.76 2.76 0 1 1 0-5.52 2.76 2.76 0 0 1 0 5.52zm20.17 17.37h-4.77v-7.43c0-1.77-.03-4.05-2.47-4.05-2.47 0-2.85 1.93-2.85 3.92v7.56h-4.77V12h4.58v2.08h.06a5.02 5.02 0 0 1 4.52-2.48c4.83 0 5.72 3.18 5.72 7.32v8.37z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="#FFFFFF">
+                        <path
+                            d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64a15.353 15.353 0 0 1 4.005-0.539c1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.121 1.646 2.548 1.646 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z" />
+                    </svg>
+                </a>
+                <a href="https://x.com/" target="_blank" aria-label="X (Twitter)">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="#FFFFFF">
+                        <path
+                            d="M18.42 14.009L27.891 3h-2.244l-8.224 9.559L10.855 3H3.28l9.932 14.455L3.28 29h2.244l8.684-10.095L20.944 29h7.575l-10.1-14.991zm-3.074 3.573l-1.006-1.439L6.333 4.69h3.447l6.462 9.243 1.006 1.439 8.4 12.015h-3.447l-6.854-9.804z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="project-info">
+                <p>WDD231 Class Project</p>
+                <p>Tusiime Jesse</p>
+                <p>&copy; <span id="currentYear"></span> Kampala Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
