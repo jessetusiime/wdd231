@@ -10,36 +10,6 @@
             color: #333;
         }
 
-        /* header {
-            background: #2c3e50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        nav {
-            background: #34495e;
-            padding: 1rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-        }
-
-        nav a:hover {
-            background: #2c3e50;
-            border-radius: 4px;
-        } */
 
         main {
             max-width: 1400px;
@@ -135,7 +105,7 @@
             font-size: 1.1rem;
             cursor: pointer;
             width: 100%;
-            transition: background 0.3s;
+            transition: var(--primary-color) 0.3s;
         }
 
         input[type="submit"]:hover {
@@ -213,7 +183,7 @@
             cursor: pointer;
             border: none;
             font-size: 1rem;
-            transition: background 0.3s;
+            transition: var(--primary-color) 0.3s;
         }
 
         .learn-more-btn:hover {
@@ -288,11 +258,3 @@
         .modal-content li {
             margin-bottom: 0.5rem;
         }
-
-        /* footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        } */

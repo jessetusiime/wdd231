@@ -101,7 +101,7 @@ h2 {
     margin: 0.5rem;
     border-radius: 4px;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: var(--primary-color) 0.3s;
 }
 
 .btn-primary {

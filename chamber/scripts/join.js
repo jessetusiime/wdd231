@@ -1,4 +1,3 @@
-// Set timestamp when page loads
 document.addEventListener('DOMContentLoaded', function () {
     const timestampField = document.getElementById('timestamp');
     const now = new Date();
@@ -16,7 +15,6 @@ function closeModal(modalId) {
     document.body.style.overflow = 'auto';
 }
 
-// Close modal when clicking outside
 window.onclick = function (event) {
     if (event.target.classList.contains('modal')) {
         event.target.style.display = 'none';
@@ -24,7 +22,6 @@ window.onclick = function (event) {
     }
 }
 
-// Close modal with Escape key
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         const modals = document.querySelectorAll('.modal');
