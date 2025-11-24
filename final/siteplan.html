@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website siteplan for a dynamic car models and specifications gallery project.">
+    <meta name="author" content="Your Name">
+    <title>Car Models Gallery - Website Siteplan</title>
+    <link rel="stylesheet" href="siteplan.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Swift Auto Gallery</h1>
+        <p>Website Siteplan &ndash; Car Models and Specifications Gallery</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name & Branding</h2>
+            <h3>Site Name: Swift Auto Gallery</h3>
+            <p><strong>Reason:</strong> Swift Auto Gallery is a combination of speed, professionalism, and clarity.
+                The site conveys efficiency and quick access to information that is perfect for users who want fast, easy
+                browsing of car specifications.</p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>Swift Auto Gallery is a professional, information-focused car gallery that serves as a dynamic showcase
+                of diverse vehicle models and their detailed specifications. The site provides:</p>
+            <ul>
+                <li>A browsable collection of 15+ car models with specifications (brand, model, year,
+                    engine type, horsepower)</li>
+                <li>Quick-view cards with essential information and the ability to access full details through modals</li>
+                <li>A responsive, user-friendly experience optimized for both desktop and mobile browsing</li>
+                <li>Dynamic content management through JSON data integration, ensuring consistency and scalability</li>
+                <li>Educational context about how the site leverages modern web technologies (JavaScript, localStorage,
+                    responsive design)</li>
+            </ul>
+            <p>The site targets car enthusiasts, potential buyers researching vehicles, and anyone seeking reliable,
+                well-organized automotive specification data.</p>
+        </section>
+
+        <section>
+            <h2>Target Audience & User Scenarios</h2>
+
+            <h3>Primary Audience:</h3>
+            <p>Car enthusiasts and potential buyers seeking clear, organized information about various vehicle models.
+                Users value easy navigation, comprehensive specs, and the ability to compare vehicles easily.</p>
+
+            <h3>Secondary Audience:</h3>
+            <p>Researchers, students, and general information seekers who want quick access to reliable car
+                specifications without confusion or sales pressure.</p>
+
+            <h3>User Scenarios:</h3>
+
+            <div class="scenario">
+                <strong>Scenario 1: The Comparison buyer</strong>
+                <p>"I'm looking to buy a new car and want to compare 3–4 different models quickly. I want to see
+                    side by side specs like horsepower, engine type, and year without having to click through multiple
+                    pages."</p>
+                <p><em>Solution:</em> The Models page displays a dynamic grid of car cards with essential specs that are visible.
+                    Users can click "View Details" to open a modal with the information, allowing
+                    easy comparison without leaving the page.</p>
+            </div>
+
+            <div class="scenario">
+                <strong>Scenario 2: The Common Enthusiast</strong>
+                <p>"I'm browsing on my phone during and want to explore interesting cars. I'd like to see featured
+                    vehicles, learn about their specs, and maybe save my favorites for later."</p>
+                <p><em>Solution:</em> The home page features a  selection of standout vehicles, and the
+                    responsive design adapts to mobile. localStorage tracks their favorite cars, allowing users to revisit
+                    their saved selections on different visits.</p>
+            </div>
+
+            <div class="scenario">
+                <strong>Scenario 3: The First Time Visitor</strong>
+                <p>"I'm new to the site. I want to understand its purpose, how the data is organized, and what makes
+                    this different from other car sites."</p>
+                <p><em>Solution:</em> The About page clearly explains the site's mission, data structure, and the
+                    technical approach (JSON integration, JavaScript rendering). A brief creator bio builds trust and
+                    transparency.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Color Scheme</h2>
+            <p>The color palette reflects a modern, professional dealership aesthetic with strong contrast and
+                accessibility in mind.</p>
+
+            <div class="color-palette">
+                <div class="color-box primary">
+                    Primary Blue
+                    <div class="color-label">#1E88E5</div>
+                </div>
+                <div class="color-box dark">
+                    Dark Blue
+                    <div class="color-label">#0D47A1</div>
+                </div>
+                <div class="color-box light">
+                    Light Gray
+                    <div class="color-label">#F5F5F5</div>
+                </div>
+                <div class="color-box dark-text">
+                    Dark Text
+                    <div class="color-label">#333333</div>
+                </div>
+                <div class="color-box white">
+                    White
+                    <div class="color-label">#FFFFFF</div>
+                </div>
+            </div>
+
+            <h3>Color Usage:</h3>
+            <ul>
+                <li><strong>Primary Blue (#1E88E5):</strong> Main navigation bar, primary CTA buttons, section accents,
+                    hover states, and key interactive elements.</li>
+                <li><strong>Dark Blue (#0D47A1):</strong> Page headers, main headings, section titles, and footer
+                    background for depth and hierarchy.</li>
+                <li><strong>Light Gray (#F5F5F5):</strong> Page background, card backgrounds, section separators, and
+                    subtle contrast areas.</li>
+                <li><strong>Dark Text (#333333):</strong> Body copy, paragraphs, and all readable content for optimal
+                    contrast and readability.</li>
+                <li><strong>White (#FFFFFF):</strong> Card backgrounds, content boxes, and primary content areas to
+                    maintain visual separation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>For typography, two fonts will be used Montserrat and Roboto</p>
+
+            <div class="font-example">
+                <div class="font-heading">Montserrat (Bold)</div>
+                <div class="font-body">Usage: Page titles (H1), section headings (H2, H3), navigation links, and all labels.</div>
+            </div>
+
+            <div class="font-example">
+                <div class="font-body">Roboto Regular / Medium</div>
+                <div class="font-body">Usage: Body text, paragraphs, card descriptions, and form labels.</div>
+            </div>
+
+            <h3>Font Hierarchy:</h3>
+            <ul>
+                <li><strong>H1 (Montserrat 2.5rem, bold):</strong> Page title/site name</li>
+                <li><strong>H2 (Montserrat 1.8rem, bold):</strong> Major section headings</li>
+                <li><strong>H3 (Montserrat 1.3rem, bold):</strong> Subsection headings</li>
+                <li><strong>Body (Roboto 1rem, regular):</strong> Paragraphs and descriptive text</li>
+                <li><strong>Small (Roboto 0.85rem):</strong> Labels, metadata, and auxiliary text</li>
+            </ul>
+        </section>
+
+        <!-- WIREFRAMES SECTION -->
+        <section>
+            <h2>Wireframes</h2>
+
+            <h3>Home Page – Mobile View</h3>
+            <div class="wireframe">
+                <img src="images/home-mb.webp" alt="home mobile view">
+            </div>
+
+            <h3>Home Page – Desktop View</h3>
+            <div class="wireframe">
+                <img src="images/home-wd.webp" alt="home desktop view">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Swift Auto Gallery Siteplan. This is my siteplan for the final project of WDD231.</p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+
+</html>
