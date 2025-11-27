@@ -13,27 +13,18 @@
     <meta property="og:image" content="https://jessetusiime.github.io/wdd231/chamber/images/commerce.webp">
     <meta property="og:url" content="https://jessetusiime.github.io/wdd231/chamber/discover.html">
     <title>Discover Kampala — Kampala Chamber of Commerce</title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,200..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/discover.css">
-
-    <!-- Scripts -->
     <script type="module" src="scripts/discover.js"></script>
 </head>
-
 
 <body>
     <header>
@@ -56,24 +47,30 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero" role="banner">
             <h1>Discover Kampala</h1>
             <p class="hero-subtitle">Experience the vibrant heart of Uganda - where culture, history, and innovation meet
             </p>
         </section>
     
-        <!-- Visit Message Section -->
         <aside id="visitMessage" class="visit-message" role="complementary" aria-live="polite">
             <button id="closeMessage" class="close-message" aria-label="Close message">&times;</button>
             <p id="messageText"></p>
         </aside>
     
-        <!-- Attractions Grid -->
         <section class="attractions-section">
             <h2 class="section-title">Must-Visit Attractions</h2>
             <div id="attractionsGrid" class="attractions-grid" role="list">
-                <!-- Cards will be dynamically generated here -->
+            </div>
+
+            <div id="attractionModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+                <div class="modal-content">
+                    <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+                    <h2 id="modalTitle"></h2>
+                    <img id="modalImage" class="modal-image" src="" alt="" loading="lazy">
+                    <address id="modalAddress" class="modal-address"></address>
+                    <p id="modalDescription"></p>
+                </div>
             </div>
         </section>
     </main>
