@@ -53,7 +53,7 @@
             </p>
         </section>
     
-        <aside id="visitMessage" class="visit-message" role="complementary" aria-live="polite">
+        <aside id="visitMessage" class="visit-message" aria-live="polite">
             <button id="closeMessage" class="close-message" aria-label="Close message">&times;</button>
             <p id="messageText"></p>
         </aside>
@@ -66,7 +66,7 @@
             <div id="attractionModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
                 <div class="modal-content">
                     <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
-                    <h2 id="modalTitle"></h2>
+                    <h2 id="modalTitle" class="sr-only">Must-Visit</h2>
                     <img id="modalImage" class="modal-image" src="" alt="" loading="lazy">
                     <address id="modalAddress" class="modal-address"></address>
                     <p id="modalDescription"></p>

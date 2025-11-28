@@ -18,7 +18,7 @@ const attractions = [
     {
         name: "Kasubi Tombs",
         address: "Kasubi, Kampala",
-        image: "images/Kasubi_tombs.webp",
+        image: "images/kasubi_tombs.webp",
         description: "The World Heritage Site and burial ground for Buganda kings. Experience traditional Buganda architecture and learn about the rich cultural heritage of the kingdom.",
         hours: "Monday - Saturday: 9:00 AM - 5:00 PM",
         admission: "Adults: UGX 20,000 | Students: UGX 10,000",
