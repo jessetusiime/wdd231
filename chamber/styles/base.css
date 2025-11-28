@@ -345,7 +345,7 @@ main h2 {
     text-decoration: none;
     border-radius: 0.5rem;
     font-weight: bold;
-    transition: var(--background-color) 0.3s;
+    transition: background-color 0.3s;
 }
 
 .hero-overlay .cta-btn {
