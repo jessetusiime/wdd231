@@ -33,6 +33,22 @@ function displayVisitMessage() {
     });
 }
 
+function initializeMenu() {
+    const menuButton = document.getElementById('menuButton');
+    const navMenu = document.getElementById('navMenu');
+
+    if (menuButton && navMenu) {
+        menuButton.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+
+            const isOpen = navMenu.classList.contains('open');
+            menuButton.setAttribute('aria-expanded', isOpen);
+
+            menuButton.textContent = isOpen ? '✕' : '☰';
+        });
+    }
+}
+
 // Modals
 function openModal(attraction) {
     const modal = document.getElementById('attractionModal');
@@ -121,6 +137,7 @@ function renderAttractions() {
 document.addEventListener('DOMContentLoaded', () => {
     displayVisitMessage();
     renderAttractions();
+    initializeMenu();
 
     const closeButton = document.getElementById('modalClose');
     closeButton.addEventListener('click', closeModal);
