@@ -9,6 +9,14 @@
     <meta property="og:title" content="Swift Auto Gallery - Premium Vehicle Information">
     <meta property="og:description" content="Explore 15+ premium car models with detailed specifications">
     <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://pixabay.com/photos/bentley-car-vehicle-automobile-5588541/">
+    <meta property="og:locale" content="https://jessetusiime.github.io/wdd231/final/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <title>Swift Auto Gallery - Home</title>
     <link rel="stylesheet" href="styles/main.css">
@@ -42,7 +50,14 @@
     </header>
 
     <main>
-        <section class="hero">
+        
+        <section class="hero" aria-label="Car showcase hero section">
+            <picture>
+                <source srcset="images/hero_small.webp" media="(max-width: 640px)">
+                <img src="images/hero.webp" alt="Premium super cars in a show room" class="hero-image"
+                    loading="eager" width="1920" height="1080">
+            </picture>
+        
             <div class="hero-content">
                 <h1>Find Your Next Car</h1>
                 <p>Explore Premium Vehicle Models with Detailed Specifications</p>
