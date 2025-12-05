@@ -1,0 +1,301 @@
+[
+    {
+        "id": 1,
+        "brand": "Tesla",
+        "model": "Model S",
+        "year": 2024,
+        "engine": "Electric",
+        "horsepower": 670,
+        "bodyType": "Sedan",
+        "image": "images/tesla.webp",
+        "description": "The Tesla Model S is a luxury electric sedan known for its impressive range, cutting-edge technology, and exhilarating performance.",
+        "features": [
+            "Autopilot",
+            "17-inch Touchscreen",
+            "Premium Audio",
+            "Glass Roof",
+            "Over-the-air Updates"
+        ]
+    },
+    {
+        "id": 2,
+        "brand": "BMW",
+        "model": "M3",
+        "year": 2023,
+        "engine": "3.0L I6",
+        "horsepower": 503,
+        "bodyType": "Sedan",
+        "image": "images/bmw.webp",
+        "description": "The BMW M3 combines luxury with track-ready performance, featuring a powerful twin-turbo engine and precise handling.",
+        "features": [
+            "M Sport Differential",
+            "Carbon Fiber Roof",
+            "Adaptive M Suspension",
+            "Harman Kardon Audio",
+            "Head-Up Display",
+            "Twin turbo engine"
+        ]
+    },
+    {
+        "id": 3,
+        "brand": "Porsche",
+        "model": "911 Carrera",
+        "year": 2024,
+        "engine": "3.0L Flat 6",
+        "horsepower": 379,
+        "bodyType": "Coupe",
+        "image": "images/porsche.webp",
+        "description": "The iconic Porsche 911 Carrera delivers timeless design and thrilling performance with its rear-engine layout.",
+        "features": [
+            "PDK Transmission",
+            "Sport Chrono Package",
+            "PASM Suspension",
+            "Porsche Communication Management",
+            "LED Headlights",
+            "Twin turbo engine"
+        ]
+    },
+    {
+        "id": 4,
+        "brand": "Mercedes-Benz",
+        "model": "G-Class",
+        "year": 2024,
+        "engine": "4.0L V8",
+        "horsepower": 416,
+        "bodyType": "SUV",
+        "image": "images/mercedesg.webp",
+        "description": "The Mercedes-Benz G-Class is a legendary luxury SUV combining rugged off-road capability with premium comfort.",
+        "features": [
+            "4MATIC All-Wheel Drive",
+            "Three Locking Differentials",
+            "MBUX Infotainment",
+            "Burmester Audio",
+            "Nappa Leather",
+            "Twin turbo engine"
+        ]
+    },
+    {
+        "id": 5,
+        "brand": "Audi",
+        "model": "RS6 Avant",
+        "year": 2023,
+        "engine": "4.0L V8",
+        "horsepower": 591,
+        "bodyType": "Wagon",
+        "image": "images/audi.webp",
+        "description": "The Audi RS6 Avant is a high-performance wagon that blends practicality with supercar-level acceleration.",
+        "features": [
+            "Quattro AWD",
+            "Sport Differential",
+            "Matrix LED Headlights",
+            "Bang & Olufsen Audio",
+            "Adaptive Air Suspension",
+            "Twin turbo engine"
+        ]
+    },
+    {
+        "id": 6,
+        "brand": "Ford",
+        "model": "Mustang GT",
+        "year": 2024,
+        "engine": "5.0L V8",
+        "horsepower": 486,
+        "bodyType": "Coupe",
+        "image": "images/mustang.webp",
+        "description": "The Ford Mustang GT is an American muscle car icon delivering raw V8 power and classic styling.",
+        "features": [
+            "MagneRide Suspension",
+            "Performance Exhaust",
+            "Launch Control",
+            "Digital Instrument Cluster",
+            "Track Apps"
+        ]
+    },
+    {
+        "id": 7,
+        "brand": "Chevrolet",
+        "model": "Corvette C8",
+        "year": 2024,
+        "engine": "6.2L V8",
+        "horsepower": 495,
+        "bodyType": "Coupe",
+        "image": "images/corvette.webp",
+        "description": "The mid-engine Corvette C8 represents a revolutionary shift for America's sports car with exotic-car performance.",
+        "features": [
+            "Mid-Engine Layout",
+            "Z51 Performance Package",
+            "Magnetic Ride Control",
+            "Performance Data Recorder",
+            "Removable Roof Panel"
+        ]
+    },
+    {
+        "id": 8,
+        "brand": "Lamborghini",
+        "model": "Huracán",
+        "year": 2023,
+        "engine": "5.2L V10",
+        "horsepower": 631,
+        "bodyType": "Coupe",
+        "image": "images/huracan.webp",
+        "description": "The Lamborghini Huracán is a stunning supercar with a naturally aspirated V10 and aggressive Italian styling.",
+        "features": [
+            "All-Wheel Drive",
+            "Carbon Ceramic Brakes",
+            "Anima Drive Modes",
+            "Digital Cockpit",
+            "Active Aerodynamics"
+        ]
+    },
+    {
+        "id": 9,
+        "brand": "Range Rover",
+        "model": "Sport",
+        "year": 2024,
+        "engine": "3.0L I6",
+        "horsepower": 395,
+        "bodyType": "SUV",
+        "image": "images/range_rover.webp",
+        "description": "The Range Rover Sport combines luxury, off-road prowess, and dynamic on-road performance in one elegant package.",
+        "features": [
+            "Terrain Response 2",
+            "Air Suspension",
+            "Pivi Pro Infotainment",
+            "Meridian Audio",
+            "Configurable Ambient Lighting",
+            "Mild Hybrid"
+        ]
+    },
+    {
+        "id": 10,
+        "brand": "Lexus",
+        "model": "LC 500",
+        "year": 2023,
+        "engine": "5.0L V8",
+        "horsepower": 471,
+        "bodyType": "Coupe",
+        "image": "images/lexus.webp",
+        "description": "The Lexus LC 500 is a grand touring coupe featuring stunning design, a sonorous V8, and Japanese craftsmanship.",
+        "features": [
+            "10-Speed Automatic",
+            "Adaptive Variable Suspension",
+            "Mark Levinson Audio",
+            "Color Head-Up Display",
+            "Handcrafted Interior"
+        ]
+    },
+    {
+        "id": 11,
+        "brand": "McLaren",
+        "model": "720S",
+        "year": 2023,
+        "engine": "4.0L V8",
+        "horsepower": 710,
+        "bodyType": "Coupe",
+        "image": "images/mclaren.webp",
+        "description": "The McLaren 720S is a technological masterpiece offering breathtaking performance and aerodynamic excellence.",
+        "features": [
+            "Carbon Fiber Monocoque",
+            "Proactive Chassis Control",
+            "Dihedral Doors",
+            "Folding Driver Display",
+            "Variable Drift Control",
+            "Twin-Turbo"
+        ]
+    },
+    {
+        "id": 12,
+        "brand": "Volkswagen",
+        "model": "Golf R",
+        "year": 2024,
+        "engine": "2.0L I4",
+        "horsepower": 315,
+        "bodyType": "Hatchback",
+        "image": "images/volkswagen.webp",
+        "description": "The Volkswagen Golf R is a hot hatch that delivers serious performance with everyday practicality and refinement.",
+        "features": [
+            "4MOTION AWD",
+            "Adaptive Chassis Control",
+            "Digital Cockpit Pro",
+            "R Performance Exhaust",
+            "Travel Assist",
+            "Turbo "
+        ]
+    },
+    {
+        "id": 13,
+        "brand": "Nissan",
+        "model": "GT-R NISMO",
+        "year": 2023,
+        "engine": "3.8L V6",
+        "horsepower": 600,
+        "bodyType": "Coupe",
+        "image": "images/nissan.webp",
+        "description": "The Nissan GT-R NISMO is a Japanese supercar legend known for its blistering acceleration and advanced technology.",
+        "features": [
+            "ATTESA E-TS AWD",
+            "Launch Control",
+            "Carbon Ceramic Brakes",
+            "Recaro Seats",
+            "Titanium Exhaust",
+            "Twin-Turbo"
+        ]
+    },
+    {
+        "id": 14,
+        "brand": "Jaguar",
+        "model": "F-TYPE R",
+        "year": 2024,
+        "engine": "5.0L V8",
+        "horsepower": 575,
+        "bodyType": "Coupe",
+        "image": "images/jaguar.webp",
+        "description": "The Jaguar F-TYPE R delivers British performance and style with a supercharged V8 and dramatic exhaust note.",
+        "features": [
+            "All-Wheel Drive",
+            "Adaptive Dynamics",
+            "Configurable Dynamics",
+            "Meridian Surround Sound",
+            "Performance Seats",
+            "Supercharged"
+        ]
+    },
+    {
+        "id": 15,
+        "brand": "Maserati",
+        "model": "MC20",
+        "year": 2024,
+        "engine": "3.0L V6",
+        "horsepower": 621,
+        "bodyType": "Coupe",
+        "image": "images/maserati.webp",
+        "description": "The Maserati MC20 is an exotic Italian supercar with a race-derived engine and butterfly doors.",
+        "features": [
+            "Carbon Fiber Monocoque",
+            "Butterfly Doors",
+            "Launch Control",
+            "Sonus Faber Audio",
+            "Maserati Touch Control Plus",
+            "Twin-Turbo"
+        ]
+    },
+    {
+        "id": 16,
+        "brand": "Rivian",
+        "model": "R1T",
+        "year": 2024,
+        "engine": "Quad Electric",
+        "horsepower": 835,
+        "bodyType": "Truck",
+        "image": "images/rivian.webp",
+        "description": "The Rivian R1T is an all-electric adventure truck combining sustainability with off-road capability and innovative features.",
+        "features": [
+            "Quad-Motor AWD",
+            "Tank Turn",
+            "Gear Tunnel Storage",
+            "Camp Kitchen",
+            "Adjustable Air Suspension",
+            "Non turbo"
+        ]
+    }
+]

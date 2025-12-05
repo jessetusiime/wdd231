@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for contacting Swift Auto Gallery">
+    <meta name="author" content="Your Name">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <title>Thank You - Swift Auto Gallery</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .thankyou-section {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            background-color: var(--light-gray);
+        }
+
+        .thankyou-content {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .thankyou-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .thankyou-content h1 {
+            font-size: 2.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+
+        .thankyou-content p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .submission-details {
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: left;
+            margin: 2rem 0;
+        }
+
+        .submission-details h2 {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .detail-item {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 1rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: var(--dark-text);
+        }
+
+        .detail-value {
+            color: #666;
+            word-break: break-word;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-blue);
+        }
+
+        .btn-secondary {
+            background-color: var(--light-gray);
+            color: var(--dark-text);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+
+        @media (max-width: 768px) {
+            .thankyou-content {
+                padding: 2rem;
+            }
+
+            .thankyou-content h1 {
+                font-size: 2rem;
+            }
+
+            .detail-item {
+                grid-template-columns: 1fr;
+                gap: 0.3rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Swift Auto Gallery</span>
+                </div>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou-section">
+            <div class="thankyou-content">
+                <div class="thankyou-icon">✅</div>
+                <h1>Thank You!</h1>
+                <p>Your message has been successfully submitted. We appreciate you taking the time to reach out to us.
+                </p>
+
+                <div class="submission-details">
+                    <h2>Submission Details</h2>
+                    <div class="detail-item">
+                        <span class="detail-label">Name:</span>
+                        <span class="detail-value" id="displayName">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Email:</span>
+                        <span class="detail-value" id="displayEmail">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Phone:</span>
+                        <span class="detail-value" id="displayPhone">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Subject:</span>
+                        <span class="detail-value" id="displaySubject">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Message:</span>
+                        <span class="detail-value" id="displayMessage">-</span>
+                    </div>
+                </div>
+
+                <p>We'll review your message and get back to you within 1-2 business days.</p>
+
+                <div class="button-group">
+                    <a href="index.html" class="btn btn-primary">Back to Home</a>
+                    <a href="models.html" class="btn btn-secondary">Browse Models</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Swift Auto Gallery</h3>
+                <p>Your trusted source for premium vehicle information and specifications.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#" id="videoDemo">Video Demonstration</a></li>
+                    <li><a href="attributions.html">Image Credits</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Swift Auto Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module">
+        // HAMBURGER MENU
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // PARSE URL PARAMETERS AND DISPLAY
+        const urlParams = new URLSearchParams(window.location.search);
+
+        document.getElementById('displayName').textContent = urlParams.get('fullName') || 'Not provided';
+        document.getElementById('displayEmail').textContent = urlParams.get('email') || 'Not provided';
+        document.getElementById('displayPhone').textContent = urlParams.get('phone') || 'Not provided';
+        document.getElementById('displaySubject').textContent = urlParams.get('subject') || 'Not provided';
+        document.getElementById('displayMessage').textContent = urlParams.get('message') || 'Not provided';
+    </script>
+</body>
+
+</html>

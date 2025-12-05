@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Swift Auto Gallery - Browse premium vehicle models and detailed specifications. Your trusted source for car information.">
+    <meta name="author" content="Tusiime Jesse">
+    <meta property="og:title" content="Swift Auto Gallery - Premium Vehicle Information">
+    <meta property="og:description" content="Explore 15+ premium car models with detailed specifications">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Swift Auto Gallery - Home</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/common.mjs"></script>
+    <script type="module" src="scripts/main.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Swift Auto Gallery Logo" class="logo-image">
+                    <span class="logo-text">Swift Auto Gallery</span>
+                </div>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find Your Next Car</h1>
+                <p>Explore Premium Vehicle Models with Detailed Specifications</p>
+                <a href="models.html" class="cta-button">Browse Models</a>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <h2>Featured Vehicles</h2>
+                <p class="section-intro">Discover our handpicked selection of premium automobiles</p>
+
+                <div class="featured-grid" id="featuredGrid">
+                    <div class="loading">Loading featured vehicles...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="container">
+                <h2>Welcome to Swift Auto Gallery</h2>
+                <p>Swift Auto Gallery is your premier destination for comprehensive vehicle information. We provide
+                    detailed specifications, high-quality images, and expert insights on a wide collection of
+                    automobiles. Whether you're researching your next purchase or simply passionate about cars, our
+                    gallery offers an intuitive, fast, and informative browsing experience.</p>
+                <p>Explore over 15 vehicle models with detailed specifications including engine type, horsepower, year,
+                    and more. Our platform is designed to help you make informed decisions quickly and efficiently.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Swift Auto Gallery</h3>
+                <p>Your trusted source for premium vehicle information and specifications.</p>
+                <p class="space">&copy;<span id="currentyear"></span> Swift Auto Gallery. All rights reserved.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#" id="videoDemo">Video Demonstration</a></li>
+                    <li><a href="attributions.html">Image Credits</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+            | Tusiime Jesse | Kampala, Uganda |
+        </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
