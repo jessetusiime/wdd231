@@ -103,10 +103,8 @@ header {
     transition: 0.3s;
 }
 
-/* Hero Section - UPDATED */
 .hero {
     position: relative;
-    /* Added */
     color: var(--white);
     text-align: center;
     padding: 8rem 2rem;
@@ -115,10 +113,8 @@ header {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    /* Prevents image overflow */
 }
 
-/* New: Hero image styling */
 .hero-image {
     position: absolute;
     top: 0;
@@ -128,10 +124,8 @@ header {
     object-fit: cover;
     object-position: center;
     z-index: -1;
-    /* Places behind content */
 }
 
-/* New: Gradient overlay using pseudo-element */
 .hero::before {
     content: '';
     position: absolute;
