@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary-blue: #1E88E5;
+    --primary-blue: #0458a1;
     --dark-blue: #0D47A1;
     --light-gray: #F5F5F5;
     --dark-text: #333333;
@@ -83,7 +83,7 @@ header {
 
 .nav-links a:hover,
 .nav-links a.active {
-    opacity: 0.8;
+    text-decoration: underline;
 }
 
 .hamburger {
@@ -170,7 +170,7 @@ section {
 .section-intro {
     text-align: center;
     font-size: 1.1rem;
-    color: #666;
+    color: var(--dark-text);
     margin-bottom: 3rem;
 }
 
@@ -216,7 +216,7 @@ section {
     gap: 1rem;
     margin: 1rem 0;
     font-size: 0.9rem;
-    color: #666;
+    color: var(--dark-text);
 }
 
 .car-specs span {
@@ -351,12 +351,13 @@ footer {
 }
 
 .footer-section a {
-    color: rgba(255, 255, 255, 0.8);
-    transition: color 0.3s ease;
+    text-decoration: underline;
+    color: var(--white)
 }
 
 .footer-section a:hover {
-    color: var(--white);
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
 }
 
 .footer-bottom {
